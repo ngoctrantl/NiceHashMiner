@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "22:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: MSTest.TestAdapter
+    versions:
+    - 2.1.2
+    - 2.2.1
+  - dependency-name: MSTest.TestFramework
+    versions:
+    - 2.1.2
+    - 2.2.1
+  - dependency-name: Microsoft.NET.Test.Sdk
+    versions:
+    - 16.8.3
+    - 16.9.1
+  - dependency-name: SharpCompress
+    versions:
+    - 0.27.1
+    - 0.28.0
+    - 0.28.1
+  - dependency-name: MegaApiClient
+    versions:
+    - 1.8.2
+  - dependency-name: Newtonsoft.Json
+    versions:
+    - 12.0.3
